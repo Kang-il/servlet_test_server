@@ -15,36 +15,30 @@
 <body>
 
 
-<%! public static Date addDays(Date d,int days){
-	Calendar cal=Calendar.getInstance();
-	cal.setTime(d);
-	cal.add(Calendar.DATE,days);
-	Date c =cal.getTime();
-	d=new Date();
-	return c;
+<%! public static Calendar addDays(Calendar cal , int days){
+	cal.add(Calendar.DATE, days);
+	return cal;
 }%>
 
 <div class="container">
 
-<h1 class="text-center">오늘 부터1일</h1>
+<h1>오늘 부터1일</h1>
 
-<%
-	Date now=new Date();
-	SimpleDateFormat asd= new SimpleDateFormat("yyyy년 MM월 dd일");
+<%	
+	Calendar cal=Calendar.getInstance();
+	cal.add(Calendar.DATE,-1);
+	SimpleDateFormat asd= new SimpleDateFormat("yyyy년 M월 d일");
 	
-	int afterDays=99;
 	
-	for(int i=0;i<10;i++){%>
 	
-		<div class="d-flex justify-content-center">
+	for(int i=100;i<=1000;i+=100){%>
+		<div class="d-flex">
 			<div class="d-flex justify-content-start" >
-				<h2 class="font-weight-light"><%=afterDays+1%>일</h2>
+				<h1 class="font-weight-bold"><%=i%></h1><span class="h1 font-weight-light">일: &nbsp;</span>
 			</div>
-			<h2 class="font-weight-light text-danger"><%=asd.format(addDays(now,afterDays)) %></h2>
+			<h1 class="font-weight-bold text-danger"><%=asd.format(addDays(cal,100).getTime())%></h1>
 		</div>
-	<%
-	afterDays+=100;}
-	%>
+	<%}%>
 	</div>
 	
 	
