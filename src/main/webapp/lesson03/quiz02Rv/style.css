@@ -1,0 +1,14 @@
+@charset "UTF-8";
+#wrap{width:1200px; margin:auto;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+header{height:100px;}
+header .logo{width:150px;}
+header .search{width:1050px;}
+header .search .search-bar{width:350px;}
+
+nav{height:40px;}
+.contents{}
+
+footer{height:200px;}
