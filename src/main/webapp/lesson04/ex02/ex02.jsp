@@ -12,7 +12,7 @@
 		유저추가 >  ex02.jsp (input 폼 화면)->ex02_insert(서블릿 , insert 쿼리)
 		-> ex02_1.jsp(유저목록, select 쿼리)
 		
-	
+	 
 	 --%>
 	<form method="post" action="/lesson04/ex02_insert">
 		<p>

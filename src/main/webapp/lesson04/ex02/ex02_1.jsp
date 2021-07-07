@@ -16,7 +16,7 @@
 		String query="SELECT * FROM `new_user`;";
 		try{
 			ResultSet res= mysqlService.select(query);
-		
+		 
 	%>
 	<a href="ex02.jsp">등록하기</a>
 	<table>

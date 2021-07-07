@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.test.common.MysqlService;
-
+ 
 @WebServlet("/lesson04/ex02_insert")
 public class Ex02Insert extends HttpServlet{
 	@Override

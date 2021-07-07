@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.test.common.MysqlService;
-
+ 
 @WebServlet()
 public class ServletQuiz02 extends HttpServlet{
 	@Override
