@@ -17,7 +17,7 @@ public class MysqlService {
     private Connection conn = null;
     private Statement statement;
     private ResultSet res;
-
+    private MysqlService() {}
     // Singleton 패턴: MysqlService라는 객체가 단 하나만 생성되도록 하는 디자인 패턴(DB 연결을 여러 객체에서 하지 않도록)
     public static MysqlService getInstance() {
         if (mysqlService == null) { mysqlService =  new MysqlService(); }
