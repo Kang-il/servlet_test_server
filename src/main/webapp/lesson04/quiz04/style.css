@@ -1,0 +1,15 @@
+@charset "UTF-8";
+#wrap{ width:800px; margin:auto;}
+
+header{height:100px;background-color:#FF9966;}
+header .logo{text-decoration:none;}
+header .logo:hover{text-decoration:none;}
+nav{height:40px;background-color:#FF9966;}
+nav .menu{width:800px;}
+
+section .big-box{margin-left:2px;}
+section .goods-item{border:2px solid #FF9966;}
+section .goods-item:hover{background-color:#ffeee6;}
+section .user-name{color:#FF9966;}
+section .price-tag{ width:200px;}
+footer{height:50px;}
